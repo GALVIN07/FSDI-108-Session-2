@@ -113,5 +113,18 @@ print(ages)
 
 
 
+# Find the minimum algorithm
+
+ages = [ 62,34,21,78,23,88,20, 65,32, 17, 94, 17, 16, 65,21,89]
+
+min = ages[0]
+for num in ages:
+    if num < min:
+        min=num
+print(f"the youngest person's age is {min}")
+
+
+
+
 
     
