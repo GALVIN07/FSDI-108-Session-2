@@ -125,6 +125,34 @@ print(f"the youngest person's age is {min}")
 
 
 
+from mock_data import catalog
+def get_unique_categories(): 
+    categories = []
+    for prod in catalog:
+        cat = prod["category"]
+        if cat not in categories:
+            categories.append(cat)
+    print(categories)
+            
 
 
-    
+
+
+get_unique_categories()
+
+
+
+
+
+
+colors = ["red", "blue", "orange", "orange", "Blue", "Green", "Red", "blue", "Black", "gray", "GrAY", "oRanGE"]
+
+
+def get_unique_colors():
+    unique_colors = []
+    for color in colors:
+        if color.lower() not in unique_colors:
+            unique_colors.append(color.lower())
+    print(unique_colors)
+
+get_unique_colors()    
